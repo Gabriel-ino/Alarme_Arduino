@@ -8,3 +8,6 @@ Este projeto é apenas uma adaptação do sensor ultrassônico para uma situaç�
 Meus agradecimentos ao autor do site supracitado, sem ele eu não teria conseguido compreender a biblioteca do sensor e criado o projeto.
 
 Para funcionamento do programa, é necessário ter a biblioteca Ultrasonic instalada na Arduino IDE, demais explicações no link acima.
+
+Hardware: https://www.tinkercad.com/things/a0eWRAzNa9Y-magnificent-blorr-fulffy/editel?sharecode=uWxBJHY9wlMAJ3Cx0vR9a7zSSMJL5NlzXQUioq03TIs
+
