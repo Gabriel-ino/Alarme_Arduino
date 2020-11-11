@@ -4,9 +4,7 @@ const int echoPin = 7;
 const int trigPin = 6; 
 int buzzerPin = 8;
 Ultrasonic ultrasonic(trigPin,echoPin); 
- 
-int s; 
-String resultado; 
+int s;  
  
 void setup(){
   pinMode(echoPin, INPUT); 
@@ -20,9 +18,7 @@ void setup(){
 void loop(){
   
   hcsr04(); 
-  Serial.print("Distancia "); 
-  Serial.print(resultado); 
-  Serial.println("cm"); 
+ 
   
 }
 
@@ -34,7 +30,6 @@ void hcsr04(){
     digitalWrite(trigPin, LOW); 
     
     s = (ultrasonic.Ranging(CM)); 
-    resultado = String(s);  
     delay(300); 
     if (s >= 100) {
       digitalWrite (12, 0);
