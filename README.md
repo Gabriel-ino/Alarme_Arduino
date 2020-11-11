@@ -6,3 +6,5 @@ OBS: TODA linha de código que se refere ao sensor ultrassônico foi aprendida n
 Este projeto é apenas uma adaptação do sensor ultrassônico para uma situação específica, montada por mim.
 
 Meus agradecimentos ao autor do site supracitado, sem ele eu não teria conseguido compreender a biblioteca do sensor e criado o projeto.
+
+Para funcionamento do programa, é necessário ter a biblioteca Ultrasonic instalada na Arduino IDE, demais explicações no link acima.
