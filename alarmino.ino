@@ -1,8 +1,9 @@
 #include "Ultrasonic.h" 
-
+#include <Buzzer.h>
 const int echoPin = 7; 
 const int trigPin = 6; 
 int buzzerPin = 8;
+Buzzer Alarme(buzzerPin);
 Ultrasonic ultrasonic(trigPin,echoPin); 
 int s;  
  
@@ -37,7 +38,7 @@ void hcsr04(){
       digitalWrite (11, 1);
     }
     else{
-    if (s < 100 && s >= 60){
+    if (s < 100 && s >= 50){
       digitalWrite (11, 0);
       digitalWrite (13,0);
       digitalWrite (12, 1);
@@ -46,10 +47,11 @@ void hcsr04(){
       digitalWrite (11, 0);
       digitalWrite (12, 0);
       digitalWrite(13, 1);
-      tone(buzzerPin, 700);
+      Alarme.beep(1000000);
+      
       
       
       }
     }
     delay(100);
- }
+}
